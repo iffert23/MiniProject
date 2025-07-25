@@ -25,7 +25,7 @@ jobs:
       
       - name: Build with Maven
         working-directory: board-app
-          mvn clean package -DskipTests
+        run: mvn clean package -DskipTests
         
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
