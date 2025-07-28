@@ -24,7 +24,7 @@ jobs:
           distribution: 'zulu'  # 11일경우 Eclipse Temurin
       
       - name: Build with Maven
-        working-directory: board-api
+        working-directory: MiniProject/board-api
         run: mvn clean package -DskipTests
         
       - name: Upload artifact for deployment job
